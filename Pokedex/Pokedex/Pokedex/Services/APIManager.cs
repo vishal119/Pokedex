@@ -63,7 +63,7 @@ namespace Pokedex.Services
 					//UserDialogs.Instance.Toast("Please check your internet connection", TimeSpan.FromSeconds(5));
 					return Barrel.Current.Get<PokemonDetails>(key: baseUrl + $"pokemon/{pokemonName}");
 				}
-				var response =   _client.GetAsync($"pokemon/{pokemonName}").Result;
+				var response =  await _client.GetAsync($"pokemon/{pokemonName}");
 				if (response.IsSuccessStatusCode)
 				{
 					var data = await response.Content.ReadAsStringAsync();
