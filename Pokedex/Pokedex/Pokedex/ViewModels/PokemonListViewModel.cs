@@ -102,7 +102,10 @@ namespace Pokedex.ViewModels
 				
 			}
 		}
-		
+		public void CTD001()
+        {
+            Console.WriteLine(	"CTD001");
+        }
 		
 	}
 }
