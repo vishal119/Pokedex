@@ -107,6 +107,11 @@ namespace Pokedex.ViewModels
         {
             Console.WriteLine("CTD002");
         }
+
+		public void Rebase()
+        {
+            Console.WriteLine("Reabse");
+        }
 		
 	}
 }
